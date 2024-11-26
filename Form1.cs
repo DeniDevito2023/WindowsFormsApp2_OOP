@@ -10,7 +10,6 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Runtime.Remoting.Contexts;
 using MySql.Data.MySqlClient;
-//using System.Security.Cryptography.X509Certificates;
 
 
 namespace WindowsFormsApp2_OOP
@@ -20,9 +19,13 @@ namespace WindowsFormsApp2_OOP
         public Form1()
         {
             InitializeComponent();
+            
+            forma2 = new Form2();
+            forma3 = new Form3();
         }
 
-   
+        Form2 forma2;
+        Form3 forma3;
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();       }
@@ -47,37 +50,26 @@ namespace WindowsFormsApp2_OOP
             adapter.SelectCommand = command;
 
             adapter.Fill(table);
-
+     
             if (table.Rows.Count > 0)
             {
-                MessageBox.Show("Yes");
+                MessageBox.Show("Подключение установлено, идентификация пройдена!");
+                
+                forma2.ShowDialog(this);
+
             } else
             {
-                MessageBox.Show("No");
+                
+                MessageBox.Show("Идентификация не пройдена, проверьте логин и пароль!");
+               
+                
             }
+      
+        }
 
-
-            //SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\WindowsFormsApp2_OOP\testDataBase.mdf;Integrated Security=True;Connect Timeout=30;Encrypt=True");
-
-            //SqlDataAdapter sda = new SqlDataAdapter("Select Count(*) From Table where Пользователь = '" + textBox1.Text + "' and Пароль = '" + textBox2.Text + "'", con);
-            //DataTable dataTable = new DataTable();
-            //sda.Fill(dataTable);
-
-
-            //if (dataTable.Rows[0][0].ToString() == "1")
-            //{
-            //    this.Hide();
-            //    Form2 f2 = new Form2();
-            //f2.Show();
-
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Соединение не установлено");
-            //}
-
-
-
+        private void button3_Click(object sender, EventArgs e)
+        {
+            forma3.ShowDialog(this);
         }
     }
 }

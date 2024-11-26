@@ -16,3 +16,4 @@ D:\WindowsFormsApp2_OOP\bin\Debug\System.Numerics.Vectors.dll
 D:\WindowsFormsApp2_OOP\bin\Debug\System.Buffers.dll
 D:\WindowsFormsApp2_OOP\bin\Debug\MySql.Data.xml
 D:\WindowsFormsApp2_OOP\obj\Debug\WindowsF.5A90E273.Up2Date
+D:\WindowsFormsApp2_OOP\obj\Debug\WindowsFormsApp2_OOP.Form3.resources

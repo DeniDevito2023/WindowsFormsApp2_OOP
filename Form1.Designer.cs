@@ -39,6 +39,7 @@ namespace WindowsFormsApp2_OOP
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,7 +91,7 @@ namespace WindowsFormsApp2_OOP
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(474, 446);
+            this.button1.Location = new System.Drawing.Point(474, 321);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(429, 166);
             this.button1.TabIndex = 5;
@@ -100,7 +101,7 @@ namespace WindowsFormsApp2_OOP
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(937, 447);
+            this.button2.Location = new System.Drawing.Point(932, 322);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(385, 165);
             this.button2.TabIndex = 6;
@@ -111,18 +112,29 @@ namespace WindowsFormsApp2_OOP
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(46, 369);
+            this.pictureBox1.Location = new System.Drawing.Point(51, 376);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(356, 347);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(567, 522);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(639, 181);
+            this.button3.TabIndex = 8;
+            this.button3.Text = "Вызов формы №3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1467, 770);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -150,6 +162,7 @@ namespace WindowsFormsApp2_OOP
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button3;
     }
 }
 
